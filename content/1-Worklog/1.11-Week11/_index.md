@@ -1,57 +1,28 @@
 ---
 title: "Week 11 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 1
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 11 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Launch application server groups on EC2 and distribute traffic using Application Load Balancers (ALB) for Genzite.
+* Configure dynamic Auto Scaling Groups (ASG) to handle automated scale-out/scale-in events.
+* Map domain records via Route 53 and verify SSL/TLS certificates using AWS Certificate Manager (ACM).
+* Deploy global content delivery network distribution endpoints via Amazon CloudFront.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Monday | **EC2 Server Launch & Launch Templates** <br>- Boot EC2 servers configured with Docker to host Genzite. <br>- Package server configurations and create a reusable Launch Template. | 29/06/2026 | 29/06/2026 | [EC2 Web Server](../../../aws-workshop-genzite.md#L1048) |
+| Tuesday | **Application Load Balancer (ALB) Provisioning** <br>- Create an ALB and set up Target Groups to route traffic. <br>- Forward incoming HTTP queries (port 80) to active EC2 web servers. | 30/06/2026 | 30/06/2026 | [Load Balancer Setup](../../../aws-workshop-genzite.md#L1120) |
+| Wednesday | **Auto Scaling Group (ASG) Setup** <br>- Create an Auto Scaling Group to dynamically scale based on load. <br>- Verify scaling policies to maintain high availability (HA). | 01/07/2026 | 01/07/2026 | [Auto Scaling Group](../../../aws-workshop-genzite.md#L1190) |
+| Thursday | **SSL/TLS Certificates (ACM) & Route 53 Domain Routing** <br>- Request and validate public SSL/TLS certificates via ACM. <br>- Create DNS Record Sets in Route 53 pointing to the ALB endpoint for secure HTTPS access. | 02/07/2026 | 02/07/2026 | [Route 53 & ACM](../../../aws-workshop-genzite.md#L1254) |
+| Friday | **CloudFront CDN Distribution Setup** <br>- Create a CloudFront Distribution sourcing from the S3 bucket (frontend) and ALB (backend). <br>- Optimize delivery by enabling cache policies at Edge locations. | 03/07/2026 | 03/07/2026 | [CloudFront Distribution](../../../aws-workshop-genzite.md#L1390) |
 
 ### Week 11 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully deployed EC2 web servers balanced by an ALB and scaled via ASG configurations.
+* Ensured high availability and self-healing properties of the Genzite platform.
+* Activated secure HTTPS protocols across all platform domains using Route 53 and ACM.
+* Published the site globally using CloudFront CDN to minimize latency.

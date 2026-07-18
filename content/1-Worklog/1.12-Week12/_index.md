@@ -1,57 +1,29 @@
 ---
 title: "Week 12 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 1
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 12 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Automate the Genzite application deployment using CI/CD pipelines via Jenkins.
+* Deploy secure access systems utilizing Bastion Hosts, SSM Session Manager, and AWS WAF/Shield.
+* Configure logging and monitoring capabilities using Amazon CloudWatch.
+* Complete performance self-assessments, finish the Hugo report site, and perform final resources teardown.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Monday | **CI/CD Automation via Jenkins Pipeline** <br>- Install a Jenkins build controller and construct a custom Jenkinsfile to pull, compile, and publish Genzite. | 06/07/2026 | 06/07/2026 | [Jenkins CI/CD Pipeline](../../../aws-workshop-genzite.md#L1491) |
+| Tuesday | **Secure Gateways via Bastion Host & SSM Session Manager** <br>- Launch Bastion Host servers inside public subnets for edge proxy routing. <br>- Configure Systems Manager Session Manager to establish SSH command shells into private EC2 targets. | 07/07/2026 | 07/07/2026 | [Bastion Host & SSM](../../../aws-workshop-genzite.md#L1739) |
+| Wednesday | **System-wide Monitoring via CloudWatch** <br>- Configure CloudWatch Metrics, Alarms, and Logs Insights to audit the health of web, DB, and cache instances. | 08/07/2026 | 08/07/2026 | [CloudWatch Monitoring](../../../aws-workshop-genzite.md#L1824) |
+| Thursday | **Network Shielding with AWS WAF & Shield** <br>- Deploy Web ACLs via AWS WAF to safeguard the Genzite public web portal from SQL injections, XSS, and DDoS triggers. | 09/07/2026 | 09/07/2026 | [WAF & Shield Security](../../../aws-workshop-genzite.md#L1913) |
+| Friday | **Final Project Teardown & Report Submission** <br>- Tear down and clean up all resources created on the AWS console to terminate billing. <br>- Perform self-assessments (Self-assessment) and compile the daily work log site. | 10/07/2026 | 10/07/2026 | [Genzite Cleanup](../../../aws-workshop-genzite.md#L1963) <br>[Self-assessment](../../6-Self-evaluation/) |
 
 ### Week 12 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully established an automated build and deploy pipeline using Jenkins CI/CD.
+* Enforced least-privilege administration configurations via SSM Session Manager shell sessions.
+* Built CloudWatch Dashboards displaying system health metrics and aggregate logs.
+* Shielded public web interfaces using AWS WAF rules to block malicious traffic patterns.
+* Completed clean teardowns of all active capstone resources and submitted the final work log report site.

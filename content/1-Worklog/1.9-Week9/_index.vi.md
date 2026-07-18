@@ -5,55 +5,26 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 9:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu cách vận hành và tối ưu các ứng dụng chạy trên nền tảng Windows Server trên hạ tầng đám mây AWS.
+* Nghiên cứu dịch vụ quản lý thư mục tập trung AWS Managed Microsoft AD và cơ chế gia nhập miền (Domain Join).
+* Thực hành thiết kế kiến trúc hệ thống ứng dụng Web hoàn chỉnh có tính sẵn sàng cao (Highly Available) và khả năng chống chịu lỗi (Fault-Tolerant).
+* Triển khai bài tập tổng hợp kết hợp các dịch vụ cốt lõi: VPC, EC2, Auto Scaling, RDS, S3, Route 53, và CloudFront.
+* Hoàn thành dọn dẹp sạch sẽ tài nguyên kiểm thử để tối ưu ngân sách AWS Free Tier.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| Thứ Hai | **Vận hành ứng dụng Windows & AWS Managed Microsoft AD** <br>- Tìm hiểu kiến thức nền tảng về cách vận hành hệ điều hành Windows Server trên AWS. <br>- Nghiên cứu dịch vụ AWS Managed Microsoft AD và phương thức quản trị tài khoản/thư mục tập trung. | 15/06/2026 | 15/06/2026 | AWS Windows on AWS Guide |
+| Thứ Ba | **Thực hành triển khai Active Directory & Domain Join** <br>- Khởi tạo AWS Managed Microsoft AD Cluster trong VPC. <br>- Khởi chạy máy chủ EC2 Windows Server và thực hiện cấu hình gia nhập miền (Domain Join) tự động/thủ công. | 16/06/2026 | 16/06/2026 | AWS Directory Service Labs |
+| Thứ Tư | **Thiết kế kiến trúc hệ thống Web HA/Fault-Tolerant** <br>- Phân tích và thiết kế sơ đồ ứng dụng web 3 lớp có tính sẵn sàng cao và chống chịu lỗi tốt. <br>- Lập kế hoạch chia subnets đa vùng (Multi-AZ), cấu hình Target Group và Application Load Balancer. | 17/06/2026 | 17/06/2026 | AWS Architecture Framework |
+| Thứ Năm | **Bài tập tổng kết - Triển khai hạ tầng Web & Data (EC2, ASG, RDS, S3)** <br>- Triển khai cơ sở dữ liệu Amazon RDS PostgreSQL đa vùng và S3 bucket lưu trữ asset tĩnh. <br>- Cấu hình Launch Template và khởi chạy Auto Scaling Group tự động co giãn máy chủ EC2 Web Server theo tải. | 18/06/2026 | 18/06/2026 | AWS Web App Deployment Guide |
+| Thứ Sáu | **Bài tập tổng kết - Cấu hình CloudFront, Route 53 & Dọn dẹp hệ thống** <br>- Tạo mạng phân phối nội dung CloudFront trỏ về ALB/S3, cấu hình định tuyến tên miền qua Route 53. <br>- Kiểm tra khả năng chịu lỗi (failover) và thực hiện xóa toàn bộ tài nguyên để tránh phát sinh chi phí ngoài ý muốn. | 19/06/2026 | 19/06/2026 | AWS Integration Labs |
 
 ### Kết quả đạt được tuần 9:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu rõ cách vận hành ứng dụng Windows Server và quản trị thư mục người dùng tập trung thông qua AWS Managed Microsoft AD.
+* Tự thiết kế và hiện thực hóa thành công sơ đồ kiến trúc hạ tầng Web-App 3 lớp có khả năng phục hồi lỗi cao.
+* Phối hợp nhuần nhuyễn các dịch vụ VPC, EC2, Auto Scaling, RDS, S3, Route 53 và CloudFront để tạo nên hệ thống hoàn chỉnh.
+* Biết cách cấu hình CloudFront CDN làm lá chắn bảo mật và Route 53 làm công cụ phân giải tên miền thông minh.
+* Dọn dẹp sạch sẽ 100% tài nguyên sau bài lab tổng kết đảm bảo kiểm soát chi phí hiệu quả.

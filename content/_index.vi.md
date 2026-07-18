@@ -7,27 +7,25 @@ chapter: false
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Châu Phúc Lợi
+&emsp; **Họ và tên:** Nguyen Thai Hung
 
-&emsp; **Số điện thoại:** 0833694159
+&emsp; **Số điện thoại:** 0359386347
 
-&emsp; **Email:** phucloidanghoconline@gmail.com
+&emsp; **Email:** nguyenthaihung7347@gmail.com
 
-&emsp; **Trường:** Trường Đại Học Công Nghệ TP.HCM-HUTECH
+&emsp; **Trường:** HUTECH University of Technology
 
 &emsp; **Ngành:** Công nghệ thông tin
 
 &emsp; **Lớp:** AWS042026
 
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
+&emsp; **Công ty thực tập:** Amazon Web Services Viet Nam Company Limited
 
 &emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Thời gian thực tập:** Từ ngày 20/02026 đến ngày 10/07/2026
-4/
-![Ảnh đại diện của bạn](/images/avatar.png)
+&emsp; **Thời gian thực tập:** Từ ngày 20/04/2026 đến ngày 10/07/2026
 
-
+![Ảnh đại diện của bạn](/images/avatar_new.png)
 
 ### Nội dung báo cáo
 

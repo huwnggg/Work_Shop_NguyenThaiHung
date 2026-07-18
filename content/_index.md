@@ -5,14 +5,13 @@ weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
 ### Student Information:
-&emsp; **Full Name:** Chau Phuc Loi
+&emsp; **Full Name:** Nguyen Thai Hung
 
-&emsp; **Phone Number:** 0833694159 
+&emsp; **Phone Number:** 0359386347
 
-&emsp; **Email:** phucloidanghoconline@gmail.com
+&emsp; **Email:** nguyenthaihung7347@gmail.com
 
 &emsp; **University:** HUTECH University of Technology
 
@@ -26,7 +25,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 20/04/2026 to 10/07/2026
 
-![Your profile picture](/images/avatar.png)
+![Your profile picture](/images/avatar_new.png)
 
 ### Report Content
 

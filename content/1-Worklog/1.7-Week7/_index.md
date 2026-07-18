@@ -5,53 +5,32 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 7 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Gain an overview of hybrid networking (VPC, Transit Gateway) and hybrid DNS management (Route 53 Resolver).
+* Prepare hybrid lab environments: create custom VPC, Key Pairs, deploy CloudFormation Templates, and configure Security Groups.
+* Deploy and configure Microsoft Active Directory (AD) on EC2 to simulate an On-premise DNS Server.
+* Establish secure Hybrid DNS configurations utilizing Route 53 Resolver Inbound/Outbound Endpoints and custom Resolver Rules.
+* Build multi-network routing topologies using Transit Gateway as a central hub connecting Cisco CSR Routers and Site-to-Site VPN with ECMP.
+* Connect isolated VPCs directly via VPC Peering and establish secure service links via VPC Endpoints (AWS PrivateLink).
+* Deploy Transit Gateway Network Manager and Network Insights for unified monitoring and traffic path debugging.
+* Execute total resource cleanup tasks across both labs to optimize cloud usage budgets.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Friday | **Day 1: Overview and Environment Preparation** <br>- Study the theory of VPC, Transit Gateway, and Route 53 Resolver architectures. <br>- Provision VPC resources, create Key Pairs, execute CloudFormation templates, and configure Security Groups for both labs. | 29/05/2026 | 29/05/2026 | [Networking Prep](https://000092.awsstudygroup.com/2-prerequiste/) <br>[DNS Prep](https://000010.awsstudygroup.com/2-prerequiste/) |
+| Sat - Sun | **Day 2: VPC Deep Dive & Active Directory Setup** <br>- Dive deep into VPC components (Subnets, Route Tables, Internet Gateways, NAT Gateways). <br>- Access the environment via RDGW and configure Microsoft Active Directory (AD) on EC2. | 30/05/2026 | 31/05/2026 | [VPC Deep Dive](https://000092.awsstudygroup.com/3-vpcs/) <br>[RDGW Connection](https://000010.awsstudygroup.com/3-connecttordgw/) <br>[Setup Active Directory](https://000010.awsstudygroup.com/4-setupad/) |
+| Monday | **Day 3: Hybrid DNS Resolution using Route 53 Resolver** <br>- Enforce Hybrid DNS patterns: configure Inbound and Outbound Endpoints and define Resolver Rules to route traffic between AWS and local zones. | 01/06/2026 | 01/06/2026 | [Setup Hybrid DNS](https://000010.awsstudygroup.com/5-setuphyriddns/) |
+| Tuesday | **Day 4: Multi-Network Routing via Transit Gateway & VPN** <br>- Launch Transit Gateway as a centralized hub connecting local and cloud resources. <br>- Establish VPN links with Cisco CSR Routers and activate ECMP multipathing. | 02/06/2026 | 02/06/2026 | [Transit GW & VPN](https://000092.awsstudygroup.com/4-transitgatewayandvpn/) |
+| Wednesday | **Day 5: VPC Peering, DNS Endpoints & AWS PrivateLink** <br>- Connect direct VPC networks using VPC Peering. <br>- Set up internal Route 53 zones, configure VPC Endpoints (AWS PrivateLink), and define endpoint services. | 03/06/2026 | 03/06/2026 | [Route 53 Internal](https://000092.awsstudygroup.com/5-route53/) <br>[VPC Endpoints](https://000092.awsstudygroup.com/6-vpcendpointaws/) <br>[VPC Peering](https://000092.awsstudygroup.com/8-vpcpeering/) |
+| Thursday | **Day 6: Central Network Governance (Network Manager)** <br>- Set up Transit Gateway Network Manager to map out connected sites. <br>- Use AWS Network Insights to analyze routing and firewall rule paths. | 04/06/2026 | 04/06/2026 | [Network Manager](https://000092.awsstudygroup.com/9-transitgatewaynetworkmanager/) |
+| Friday | **Day 7: Resource Cleanup** <br>- Clean up and tear down all provisioned hybrid network structures (VPC, Transit Gateway, VPN, Route 53 Resolver) to avoid charge leakages. | 05/06/2026 | 05/06/2026 | [DNS Cleanup](https://000010.awsstudygroup.com/6-cleanup/) <br>[Networking Cleanup](https://000092.awsstudygroup.com/10-cleanup/) |
 
 ### Week 7 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understood Hybrid Cloud networking mechanics, including cross-premise DNS query resolution via Route 53 Resolver.
+* Successfully built a simulated local network with Active Directory running on an EC2 instance.
+* Provisioned Transit Gateway hub architectures to handle massive VPC routing, configuring VPN trunks with active ECMP load sharing.
+* Enforced private data boundaries using secure VPC Peering and VPC Endpoints powered by AWS PrivateLink.
+* Mastered Transit Gateway Network Manager and Network Insights diagnostics to locate routing faults.
+* Completed a thorough teardown of all S3 endpoints, Route 53 Resolver Outbound links, Transit Gateways, and VPN instances.

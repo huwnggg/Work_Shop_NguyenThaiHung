@@ -5,53 +5,29 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 6 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn and deploy Docker containers on Amazon Lightsail.
+* Build, push, and deploy custom Docker container images on Amazon Lightsail.
+* Build high-availability web applications using Elastic Load Balancing (ELB) and Auto Scaling Groups (ASG) on EC2 and RDS.
+* Configure CPU/RAM utilization metrics and log monitoring with Amazon CloudWatch Metrics & Logs.
+* Establish automated alerts (CloudWatch Alarms) and construct system dashboards (CloudWatch Dashboards).
+* Perform final resource cleanup across all labs to optimize subscription costs.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Friday | **Day 1: Amazon Lightsail - Initialization & Basic Container Deployment** <br>- Study Amazon Lightsail Containers to easily run Docker containers in the cloud. <br>- Create a Container Service and deploy a public Docker image. | 22/05/2026 | 22/05/2026 | [Lightsail Prep](https://000046.awsstudygroup.com/1-prepare/) <br>[Deploy Public Image](https://000046.awsstudygroup.com/3-deploy-publicimage/) |
+| Sat - Sun | **Day 2: Amazon Lightsail - Custom Container Image Deployment** <br>- Create an Ubuntu host instance on Lightsail, installing Docker and AWS CLI. <br>- Build a custom Docker image locally, push to Lightsail Container Service, and execute deployment. | 23/05/2026 | 24/05/2026 | [Deploy Custom Image](https://000046.awsstudygroup.com/4-deploy-yourimage/) |
+| Monday | **Day 3: Auto Scaling & ELB - Infrastructure Prep & Load Balancer** <br>- Prepare infrastructure: custom VPC, EC2 web server, RDS database, and Launch Templates. <br>- Provision an Elastic Load Balancer (Target Group & ALB) to balance web traffic. | 25/05/2026 | 25/05/2026 | [Infra Prep](https://000006.awsstudygroup.com/2-preparation/) <br>[ALB Setup](https://000006.awsstudygroup.com/4-setup-load-balancer/) |
+| Tuesday | **Day 4: Auto Scaling & ELB - Auto Scaling Group & Scaling Tests** <br>- Create an Auto Scaling Group to dynamically scale EC2 instances. <br>- Test scaling solutions: manual, scheduled, dynamic, and predictive scaling options. | 26/05/2026 | 26/05/2026 | [ASG Setup](https://000006.awsstudygroup.com/6-create-auto-scaling-group/) <br>[Scaling Test](https://000006.awsstudygroup.com/7-test-solutions/) |
+| Wednesday | **Day 5: Amazon CloudWatch - Metric Aggregation & Log Analysis** <br>- Analyze CloudWatch metrics using search expressions and math functions. <br>- Collect application logs using CloudWatch Logs (querying via Logs Insights and creating Metric Filters). | 27/05/2026 | 27/05/2026 | [CloudWatch Metrics](https://000008.awsstudygroup.com/3-cloud-watch-metric/) <br>[CloudWatch Logs](https://000008.awsstudygroup.com/4-cloud-watch-logs/) |
+| Thursday | **Day 6: Amazon CloudWatch - Alarm Setup & Console Dashboards** <br>- Create CloudWatch Alarms to send emails when performance breaches happen, reducing MTTR. <br>- Build visual CloudWatch Dashboards to monitor resources in a single pane of glass. | 28/05/2026 | 28/05/2026 | [CloudWatch Alarms](https://000008.awsstudygroup.com/5-cloud-watch-alarm/) <br>[CloudWatch Dashboards](https://000008.awsstudygroup.com/6-cloud-watch-dashboard/) |
+| Friday | **Day 7: Resource Cleanup** <br>- Clean up all created assets (Lightsail Containers, EC2/ASG/ALB/RDS, CloudWatch Metrics) to optimize cloud spend. | 29/05/2026 | 29/05/2026 | [Lightsail Cleanup](https://000046.awsstudygroup.com/5-clean-up/) <br>[Auto Scaling Cleanup](https://000006.awsstudygroup.com/8-cleanup/) <br>[CloudWatch Cleanup](https://000008.awsstudygroup.com/7-clean-up-resources/) |
 
 ### Week 6 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Gained experience building and deploying Docker containerized services on Amazon Lightsail.
+* Constructed a high-availability infrastructure featuring Elastic Load Balancing and Auto Scaling Groups.
+* Mastered diagnostic routines, log aggregation using CloudWatch Logs Insights, and metric alarm triggers.
+* Developed CloudWatch Dashboards displaying database, container, and compute metrics.
+* Completed successful cleanup tasks across all three environments.

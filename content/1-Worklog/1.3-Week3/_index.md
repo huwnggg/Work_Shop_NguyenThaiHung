@@ -5,53 +5,27 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 3 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn and configure AWS Cloud9 online IDE environment on the AWS Console.
+* Gain proficiency in basic Cloud9 operations including file management, text editing, and terminal commands.
+* Integrate and leverage AWS CLI built-in tools within the Cloud9 IDE workspace.
+* Explore application authorization mechanisms and identify security risks associated with Access Keys.
+* Practice implementing secure access control using EC2 Instance Profiles (IAM Roles).
+* Audit resources and perform cleanup actions for both lab environments.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Monday | **AWS Cloud9 - Initialization & Basic Features** <br>- Learn about the integrated development environment (IDE) AWS Cloud9. <br>- Get familiar with the Dashboard, directory trees, file creation, and terminal. | 04/05/2026 | 04/05/2026 | [Create Cloud9](https://000049.awsstudygroup.com/1-createcloud9/) <br>[Cloud9 Basic Features](https://000049.awsstudygroup.com/2-basicfeature/) |
+| Tuesday | **AWS Cloud9 - AWS CLI Integration** <br>- Run AWS CLI commands from the integrated terminal in Cloud9. <br>- Query and manage cloud resources directly from the command line interface. | 05/05/2026 | 05/05/2026 | [Use AWS CLI](https://000049.awsstudygroup.com/3-useawscli/) |
+| Wednesday | **App Authorization - Environment Prep** <br>- Provision an EC2 instance and an S3 bucket to prepare for access testing. | 06/05/2026 | 06/05/2026 | [Environment Prep](https://000048.awsstudygroup.com/1-prepare/) |
+| Thursday | **App Authorization - Access Key Usage & Security Risks** <br>- Create an IAM User and generate Access Keys to connect EC2 to S3. <br>- Understand security risks of storing hardcoded access credentials on a server. | 07/05/2026 | 07/05/2026 | [Access Key Risk](https://000048.awsstudygroup.com/2-accesskey/) |
+| Friday | **App Authorization - IAM Role on EC2 & Cleanup** <br>- Set up secure access by creating an IAM Role and attaching it to the EC2 server. <br>- Verify EC2 can access S3 via metadata credentials. Clean up all resources across both labs (Cloud9, EC2, S3, IAM user/role) to optimize costs. | 08/05/2026 | 08/05/2026 | [IAM Role for EC2](https://000048.awsstudygroup.com/3-iamroleec2/) <br>[Cloud9 Cleanup](https://000049.awsstudygroup.com/4-cleanup/) <br>[IAM Role Cleanup](https://000048.awsstudygroup.com/4-cleanup/) |
 
 ### Week 3 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully created an online Cloud9 IDE and mastered directory navigation and editing using the terminal.
+* Leveraged built-in AWS CLI tools within Cloud9 for smooth AWS resource queries.
+* Identified major security implications of using long-term Access Keys on servers.
+* Implemented secure IAM Roles for EC2 instances to enable automatic credential rotation.
+* Completed full resource teardown across both lab environments to prevent cost leakages.
