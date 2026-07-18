@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://work-shop-nguyen-thai-hung.vercel.app/"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
